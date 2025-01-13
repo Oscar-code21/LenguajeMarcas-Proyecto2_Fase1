@@ -21,7 +21,6 @@ body {
     background-color: var(--background-color);
     color: var(--primary-color);
     line-height: 1.6;
-    transition: background-color 0.3s, color 0.3s;
 }
 
 body.dark-mode {
@@ -33,7 +32,7 @@ body.dark-mode {
 .header {
     background-color: var(--primary-color);
     color: var(--text-color);
-    padding: 20px;
+    padding: 1.25rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,27 +40,27 @@ body.dark-mode {
 .header__branding {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 0.938rem;
 }
 .header__logo-image {
-    width: 60px;
+    width: 3.75rem;
     height: auto;
 }
 .header__logo {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
 .header__nav .nav__list {
     display: flex;
-    gap: 20px;
+    gap: 1.25rem;
     list-style: none;
 }
 
 .nav__link {
     color: var(--text-color);
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.25rem;
     transition: color 0.3s;
 }
 
@@ -72,27 +71,27 @@ body.dark-mode {
 .header__controls {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 1.25rem;
 }
 
 .header__search-bar {
     display: flex;
-    gap: 10px;
+    gap: 0.625rem;
 }
 
 .search-bar__input {
-    padding: 5px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    padding: 0.313rem;
+    font-size: 1rem;
+    border: 0.063 solid #ccc;
+    border-radius: 0.25rem;
 }
 
 .search-bar__button {
-    padding: 5px 10px;
+    padding: 0.313rem 0.625rem;
     background-color: var(--secondary-color);
     color: var(--text-color);
     border: none;
-    border-radius: 4px;
+    border-radius: 0.25rem;
     cursor: pointer;
     transition: background-color 0.3s;
 }
@@ -105,99 +104,99 @@ body.dark-mode {
 .header__dark-mode-toggle {
     display: flex;
     align-items: center;
-    font-size: 16px;
+    font-size: 1rem;
     color: var(--text-color);
 }
 
 .dark-mode__label {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 0.625rem;
     cursor: pointer;
 }
 
 .dark-mode__checkbox {
-    width: 18px;
-    height: 18px;
+    width: 1.125rem;
+    height: 1.125rem;
     cursor: pointer;
 }
 
 /* Main */
 main {
-    padding: 20px;
+    padding: 1.25rem;
 }
 
 .main__section {
     text-align: center;
-    padding: 40px 20px;
+    padding: 2.5rem 1.25rem;
     background-color: var(--primary-color);
     color: var(--text-color);
-    border-radius: 8px;
-    margin-bottom: 20px;
+    border-radius: 0.5rem;
+    margin-bottom: 1.25rem;
 }
 
 .section__title {
-    font-size: 36px;
-    margin-bottom: 10px;
+    font-size: 2.25rem;
+    margin-bottom: 0.625rem;
 }
 
 .section__description {
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 .Introduction {
-    padding: 20px;
+    padding: 1.25rem;
     background-color: #fff;
-    border-radius: 8px;
-    margin-bottom: 20px;
+    border-radius: 0.5rem;
+    margin-bottom: 1.25rem;
 }
 
 .Introduction__title {
-    font-size: 28px;
-    margin-bottom: 10px;
+    font-size: 1.75rem;
+    margin-bottom: 0.625rem;
 }
 
 .Introduction__text {
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 1.8;
 }
 
 .highlights {
-    padding: 20px;
+    padding: 1.25rem;
 }
 
 .highlights_title {
-    font-size: 28px;
-    margin-bottom: 20px;
+    font-size: 1.75rem;
+    margin-bottom: 1.25rem;
     text-align: center;
 }
 
 .highlights__grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    gap: 1.25rem;
 }
 
 .highlights__item {
     background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1.25rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.313rem rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s;
 }
 
 .highlights__item:hover {
-    transform: translateY(-5px);
+    transform: translateY(-0.5rem);
 }
 
 .highlights__name {
-    font-size: 22px;
-    margin-bottom: 10px;
+    font-size: 1.375rem;
+    margin-bottom: 0.625rem;
 }
 
 .highlights__description {
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 /* Footer */
@@ -205,19 +204,19 @@ footer {
     background-color: var(--primary-color);
     color: var(--text-color);
     text-align: center;
-    padding: 10px;
-    margin-top: 20px;
+    padding: 0.625rem;
+    margin-top: 1.25rem;
 }
 
 .footer__text {
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     .header__nav .nav__list {
         flex-direction: column;
-        gap: 10px;
+        gap: 0.625rem;
     }
 
     .highlights__grid {
