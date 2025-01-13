@@ -1,155 +1,155 @@
 /* Variables CSS */
 :root {
-    --primary-color: #2c3e50;
-    --secondary-color: #e74c3c;
-    --text-color: #ecf0f1;
-    --background-color: #f4f4f4;
-    --font-family: 'Arial', sans-serif;
-    --dark-background: #121212;
-    --dark-text: #e0e0e0;
+    --primary-color: #2c3e50; /* Color principal */
+    --secondary-color: #e74c3c; /* Color secundario */
+    --text-color: #ecf0f1; /* Color de texto */
+    --background-color: #f4f4f4; /* Color de fondo */
+    --font-family: 'Arial', sans-serif; /* Familia de fuentes */
+    --dark-background: #121212; /* Color de fondo oscuro */
+    --dark-text: #e0e0e0; /* Color de texto oscuro */
 }
 
 /* Reset */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Caja de modelo de borde */
 }
-
+/* Estilos generales */
 body {
-    font-family: var(--font-family);
+    font-family: var(--font-family); /*tipografia de la pagina*/
     background-color: var(--background-color);
     color: var(--primary-color);
-    line-height: 1.6;
+    line-height: 1.6; /* Espaciado entre lineas */	
 }
-
+/* Modo Oscuro del cuerpo */
 body.dark-mode {
-    background-color: var(--dark-background);
+    background-color: var(--dark-background); /*modo oscuro*/
     color: var(--dark-text);
 }
 
 /* Header */
 .header {
-    background-color: var(--primary-color);
-    color: var(--text-color);
+    background-color: var(--primary-color); /*color de fondo del header*/
+    color: var(--text-color); /*color de texto del header*/
     padding: 1.25rem;
-    display: flex;
+    display: flex; /* uso del flexbox */
     justify-content: space-between;
     align-items: center;
 }
 .header__branding {
     display: flex;
     align-items: center;
-    gap: 0.938rem;
+    gap: 0.938rem; /*espacio entre elementos*/
 }
 .header__logo-image {
     width: 3.75rem;
-    height: auto;
+    height: auto; 
 }
 .header__logo {
-    font-size: 1.5rem;
+    font-size: 1.5rem; /*tamaño del logo*/
     font-weight: bold;
 }
 
 .header__nav .nav__list {
     display: flex;
     gap: 1.25rem;
-    list-style: none;
+    list-style: none; /*quitar viñetas*/
 }
 
 .nav__link {
-    color: var(--text-color);
-    text-decoration: none;
+    color: var(--text-color); /*color del texto*/
+    text-decoration: none; /*quitar subrayado*/
     font-size: 1.25rem;
     transition: color 0.3s;
 }
 
 .nav__link:hover {
-    color: var(--secondary-color);
+    color: var(--secondary-color); /*color al pasar el mouse*/
 }
-
+/* controles del header */
 .header__controls {
     display: flex;
-    align-items: center;
+    align-items: center; /*alineacion de elementos*/
     gap: 1.25rem;
 }
 
 .header__search-bar {
     display: flex;
-    gap: 0.625rem;
+    gap: 0.625rem; /*espacio entre elementos*/
 }
 
 .search-bar__input {
     padding: 0.313rem;
-    font-size: 1rem;
-    border: 0.063 solid #ccc;
-    border-radius: 0.25rem;
+    font-size: 1rem; /*tamaño de la fuente*/
+    border: 0.063 solid #ccc; /*borde del input*/
+    border-radius: 0.25rem; /*borde redondeado*/
 }
 
 .search-bar__button {
     padding: 0.313rem 0.625rem;
-    background-color: var(--secondary-color);
-    color: var(--text-color);
+    background-color: var(--secondary-color); /*color del boton*/
+    color: var(--text-color); /*color del texto*/
     border: none;
-    border-radius: 0.25rem;
+    border-radius: 0.25rem; /*borde redondeado*/
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s; /*efecto al pasar el mouse*/
 }
 
 .search-bar__button:hover {
-    background-color: #c0392b;
+    background-color: #c0392b; /*color al pasar el mouse*/
 }
 
-/* Dark Mode Toggle */
+/* Alternar Modo Oscuro */
 .header__dark-mode-toggle {
     display: flex;
-    align-items: center;
+    align-items: center; /*alineacion de elementos*/
     font-size: 1rem;
-    color: var(--text-color);
-}
+    color: var(--text-color); /*color del texto*/
+} 
 
 .dark-mode__label {
     display: flex;
-    align-items: center;
+    align-items: center; /*alineacion de elementos*/
     gap: 0.625rem;
-    cursor: pointer;
+    cursor: pointer; /*cursor al pasar el mouse*/
 }
 
 .dark-mode__checkbox {
-    width: 1.125rem;
-    height: 1.125rem;
-    cursor: pointer;
+    width: 1.125rem;    /*tamaño del checkbox*/
+    height: 1.125rem; /*tamaño del checkbox*/
+    cursor: pointer; /*cursor al pasar el mouse*/
 }
 
 /* Main */
 main {
-    padding: 1.25rem;
-    margin-top: 2.5rem;
+    padding: 1.25rem; /*espacio interno del main*/
+    margin-top: 2.5rem; /*espacio entre el header y el contenido*/
 }
 
 .main__section {
     text-align: center;
     padding: 2.5rem 1.25rem;
-    background-color: var(--primary-color);
+    background-color: var(--primary-color); /*color de fondo de la seccion*/
     color: var(--text-color);
     border-radius: 0.5rem;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.25rem; /*espacio entre secciones*/
 }
 
 .section__title {
     font-size: 2.25rem;
-    margin-bottom: 0.625rem;
+    margin-bottom: 0.625rem; /*espacio entre elementos*/
 }
 
 .section__description {
     font-size: 1.125rem;
 }
-
+/* apartado de introducción */
 .Introduction {
     padding: 1.25rem;
-    background-color: #fff;
+    background-color: #fff; /*color de fondo de la introduccion*/
     border-radius: 0.5rem;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.25rem; /*espacio entre elementos*/
 }
 
 .Introduction__title {
@@ -158,23 +158,23 @@ main {
 }
 
 .Introduction__text {
-    font-size: 1.125rem;
+    font-size: 1.125rem; /*tamaño del texto*/
     line-height: 1.8;
 }
-
+ /* apartado de destacados */
 .highlights {
     padding: 1.25rem;
 }
 
 .highlights_title {
     font-size: 1.75rem;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.25rem; /*espacio entre elementos*/
     text-align: center;
 }
 
 .highlights__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /*ajuste automatico de columnas*/
     gap: 1.25rem;
 }
 
@@ -182,31 +182,31 @@ main {
     background-color: #fff;
     padding: 1.25rem;
     border-radius: 0.5rem;
-    box-shadow: 0 0.125rem 0.313rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.125rem 0.313rem rgba(0, 0, 0, 0.1); /*sombra*/
     text-align: center;
-    transition: transform 0.3s;
+    transition: transform 0.3s; /*efecto al pasar el mouse*/
 }
 
 .highlights__item:hover {
-    transform: translateY(-0.5rem);
+    transform: translateY(-0.5rem); /*efecto al pasar el mouse*/
 }
 
 .highlights__name {
-    font-size: 1.375rem;
-    margin-bottom: 0.625rem;
+    font-size: 1.375rem; /*tamaño del nombre*/
+    margin-bottom: 0.625rem; /*espacio entre elementos*/
 }
 
 .highlights__description {
-    font-size: 1rem;
+    font-size: 1rem; /*tamaño de la descripcion*/
 }
 
 /* Footer */
 footer {
-    background-color: var(--primary-color);
+    background-color: var(--primary-color); /*color de fondo del footer*/
     color: var(--text-color);
-    text-align: center;
+    text-align: center; /*alineacion del texto*/
     padding: 0.625rem;
-    margin-top: 1.25rem;
+    margin-top: 1.25rem; /*espacio entre el footer y el contenido*/
 }
 
 .footer__text {
@@ -216,25 +216,25 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
     .header__nav .nav__list {
-        flex-direction: column;
+        flex-direction: column; /*columnas*/
         gap: 0.625rem;
     }
 
     .highlights__grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* 1 columna */
     }
 }
-
+/* Css para la pagina de contacto */
 .contact{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; /* 2 columnas */
     gap: 2.5rem;
     margin-top: 1.25rem;
 }
 
 .contact__form {
    display: flex;
-   flex-direction: column;
+   flex-direction: column; /* columnas */
     gap: 1.25rem;
 }
 .contact__label{
@@ -255,7 +255,7 @@ footer {
     border-radius: 0.25rem;
     width: 100%;
     height: 7.5rem;
-    resize: none;
+    resize: none; /* no redimensionar */
 }
 
 .contact__button{
@@ -271,7 +271,7 @@ footer {
 }
 
 .contact__button:hover {
-    background-color: #c0392b;
+    background-color: #c0392b; /*color al pasar el mouse*/
 }
 
 .contact__details{
@@ -289,6 +289,6 @@ footer {
 /* responsive design */
 @media (max-width: 48rem) {
     .contact {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* 1 columna */
     }
 }
