@@ -40,16 +40,25 @@
         <p class="section__description">Si tienes alguna duda, comentario o sugerencia, no dudes en contactarnos.</p>
 
         <section class="contact">
-            <form class="contact__form">
+            <form class="contact__form" action="#" method="post" id="contactForm">
                 <label for="name" class="contact__label">Nombre:</label>
-                <input type="text" id="name" class="contact__input" placeholder="Escribe tu nombre">
+                <input type="text" id="name" class="contact__input" placeholder="Escribe tu nombre" required>
                 
                 <label for="email" class="contact__label">Correo:</label>
-                <input type="email" id="email" class="contact__input" placeholder="Escribe tu correo">
+                <input type="email" id="email" class="contact__input" placeholder="Escribe tu correo" required>
+                
+                <label for="phone" class="contact__label">Teléfono:</label>
+                <input type="tel" id="phone" class="contact__input" placeholder="Escribe tu número de teléfono" required>
+                
+                <label for="age" class="contact__label">Edad:</label>
+                <input type="number" id="age" class="contact__input" placeholder="Escribe tu edad" min="18" required>
                 
                 <label for="message" class="contact__label">Mensaje:</label>
-                <textarea name="message" id="message" cols="30" rows="10" class="contact__textarea" placeholder="Escribe tu mensaje"></textarea>
+                <textarea name="message" id="message"  class="contact__textarea" placeholder="Escribe tu mensaje" required></textarea>
                 
+                <label for="newsletter" class="contact__label">¿Te gustaría recibir novedades?</label>
+                <input type="checkbox" id="newsletter" class="contact__checkbox">
+                <!--este se hace con javascript  pero eh puesto como una pequeña referencia como si mandara algo a una base de datos!-->
                 <button type="submit" class="contact__button">Enviar</button>
             </form>
 
