@@ -34,7 +34,7 @@ body.dark-mode {
     color: var(--text-color); /*color de texto del header*/
     padding: 1.25rem;
     display: flex; /* uso del flexbox */
-    justify-content: space-between;
+    justify-content: space-between; 
     align-items: center;
 }
 .header__branding {
@@ -167,7 +167,7 @@ main {
 }
 
 .highlights_title {
-    font-size: 1.75rem;
+    font-size: 1.75rem; /*tamaño del titulo*/
     margin-bottom: 1.25rem; /*espacio entre elementos*/
     text-align: center;
 }
@@ -201,6 +201,54 @@ main {
     font-size: 1rem; /*tamaño de la descripcion*/
 }
 
+/* Testimonials Section */
+.testimonials {
+    padding: 2rem; /*espacio interno*/
+    background-color: #f9f9f9;
+    margin-top: 2rem; /*espacio entre elementos*/
+    border-radius: 8px; /*borde redondeado*/
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /*sombra*/
+}
+
+.message__title {
+    font-size: 1.8rem; /*tamaño del titulo*/
+    font-weight: bold; /*negrita*/
+    text-align: center; /*alineacion del texto*/
+    margin-bottom: 1.5rem;
+    color: var(--primary-color); /*color del texto*/
+}
+
+.message__list {
+    list-style: none; /*quitar viñetas*/
+    padding: 0; /*quitar relleno*/
+    margin: 0; /*quitar margenes*/
+    display: flex; /*uso del flexbox*/
+    flex-direction: column; /*columnas*/
+    gap: 1.5rem;
+}
+
+.message__item {
+    background-color: #ffffff; /*color de fondo*/
+    padding: 1.5rem; /*espacio interno*/
+    border: 1px solid #ddd; /*borde*/
+    border-radius: 8px; /*borde redondeado*/
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /*sombra*/
+} 
+
+.message__review {
+    font-style: italic; /*cursiva*/
+    color: #555;  /*color del texto*/
+    margin-bottom: 0.5rem; /*espacio entre elementos*/
+}
+
+.message__author {
+    display: block; /*bloque*/
+    text-align: right; /*alineacion del texto*/
+    font-weight: bold; /*negrita*/
+    color: #333; /*color del texto*/
+}
+
+
 /* Footer */
 footer {
     background-color: var(--primary-color); /*color de fondo del footer*/
@@ -218,7 +266,7 @@ footer {
 @media (max-width: 768px) {
     .header__nav .nav__list {
         flex-direction: column; /*columnas*/
-        gap: 0.625rem;
+        gap: 0.625rem; /*espacio entre elementos*/
     }
 
     .highlights__grid {
@@ -226,109 +274,113 @@ footer {
     }
 }
 /* Css para la pagina de contacto */
-.contact{
+.contact {
     display: grid;
     grid-template-columns: 1fr 1fr; /* 2 columnas */
     gap: 2.5rem;
-    margin-top: 1.25rem;
+    margin-top: 1.25rem; /* Espacio entre elementos */
 }
 
 .contact__form {
-   display: flex;
-   flex-direction: column; /* columnas */
+    display: flex;
+    flex-direction: column; /* columnas */
     gap: 1.25rem;
 }
-.contact__label{
-    font-size: 1rem;
+
+.contact__label {
+    font-size: 1rem; /* Ajuste razonable */
     font-weight: bold;
 }
-.contact__input{
-    padding: 0.625rem;
+
+.contact__input, 
+.contact__textarea {
+    padding: 0.625rem; /* Ajuste razonable */
     font-size: 1rem;
-    border: 0.063rem solid #ccc;
-    border-radius: 0.25rem;
+    border: 0.063rem solid #ccc; /* Borde del input */
+    border-radius: 0.25rem; /* Bordes redondeados */
     width: 100%;
 }
-.contact__textarea{
-    padding: 0.625rem,;
-    font-size: 1rem;
-    border: 0.063rem solid #ccc;
-    border-radius: 0.25rem;
-    width: 100%;
+
+.contact__textarea {
     height: 7.5rem;
     resize: none; /* no redimensionar */
 }
 
-.contact__button{
+.contact__button {
     padding: 0.625rem;
-    background-color: var(--secondary-color);
-    color: var(--text-color);
+    background-color: var(--secondary-color); /* color del botón */
+    color: var(--text-color); /* color del texto */
     font-size: 1rem;
-    font-weight: bold;
+    font-weight: bold; /* negrita */
     border: none;
-    border-radius: 0.25rem;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    border-radius: 0.25rem; /* Bordes redondeados */
+    cursor: pointer; /* cursor al pasar el mouse */
+    transition:  0.3s; /* Efecto al pasar el mouse */
 }
 
 .contact__button:hover {
-    background-color: #c0392b; /*color al pasar el mouse*/
+    background-color: #c0392b; /* color al pasar el mouse */
 }
 
-.contact__details{
-    background-color: var(--primary-color);
-    color: var(--text-color);
+.contact__info {
+    background-color: var(--primary-color); /* color de fondo */
+    color: var(--text-color); /* color del texto */
     padding: 1.25rem;
-    border-radius: 0.5rem;
+    border-radius: 0.5rem; /* Bordes redondeados */
 }
 
-.details__info{
-    font-size: 1px;
+.details__text {
+    font-size: 1rem; /* Ajuste razonable */
     margin-bottom: 0.313rem;
 }
 
-.location{
+.location {
     margin: 2rem 0;
     padding: 1rem;
-    background-color: #f9f9f9;
-    border: 0.063rem solid #ccc;
-    border-radius: 0.5rem;
+    background-color: #f9f9f9; /* Color de fondo */
+    border: 0.063rem solid #ccc; /* Borde */
+    border-radius: 0.5rem; /* Bordes redondeados */
 }
-.location__title{
-    font-size: 1.8rem;
+
+.location__title {
+    font-size: 1.8rem; /* Tamaño del título */
     color: var(--primary-color);
-    margin-bottom: 0.625rem;
-    text-align: center;
-}
-iframe{
+    margin-bottom: 0.625rem; /* Espacio entre elementos */
+    text-align: center; /* Alineación del texto */
+} 
+
+iframe {
     width: 100%;
-    height: 18.75rem;
-    border: none;
-    border-radius: 0.5rem;
+    height: 18.75rem; /* Altura del mapa */
+    border: none;   /* Quitar borde */
+    border-radius: 0.5rem; /* Bordes redondeados */
 }
-.hours__title{
-    font-size: 1.5rem;
+
+.hours__title {
+    font-size: 1.5rem; /* Tamaño del título */
     margin-bottom: 0.625rem;
-    color: var(--primary-color);
+    color: var(--primary-color); /* Color del texto */
     text-align: center;
 }
 
-.hours__list{
-    list-style: none;
+.hours__list {
+    list-style: none; /* Quitar viñetas */
     padding: 0;
-    text-align: center;
+    text-align: center; /* Alineación del texto */
 }
-.hours__item{
+
+.hours__item {
     font-size: 1rem;
-    margin: 0.313rem;
-    color: var(--primary-color);
+    margin: 0.313rem; /* Espacio entre elementos */
+    color: var(--primary-color); /* Color del texto */
 }
-/* responsive design */
+
+/* Responsive Design */
 @media (max-width: 48rem) {
     .contact {
         grid-template-columns: 1fr; /* 1 columna */
     }
     iframe {
-        height: 15rem;
+        height: 15rem; /* Altura del mapa */
     }
 }
