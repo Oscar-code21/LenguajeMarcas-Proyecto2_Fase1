@@ -1,4 +1,4 @@
-/* Variables CSS */
+/*Variables CSS */
 :root {
     --primary-color: #2c3e50; /* Color principal */
     --secondary-color: #e74c3c; /* Color secundario */
@@ -185,6 +185,7 @@ main {
     box-shadow: 0 0.125rem 0.313rem rgba(0, 0, 0, 0.1); /*sombra*/
     text-align: center;
     transition: transform 0.3s; /*efecto al pasar el mouse*/
+    list-style: none; /*quitar viñetas*/
 }
 
 .highlights__item:hover {
@@ -286,9 +287,48 @@ footer {
     margin-bottom: 0.313rem;
 }
 
+.location{
+    margin: 2rem 0;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border: 0.063rem solid #ccc;
+    border-radius: 0.5rem;
+}
+.location__title{
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 0.625rem;
+    text-align: center;
+}
+iframe{
+    width: 100%;
+    height: 18.75rem;
+    border: none;
+    border-radius: 0.5rem;
+}
+.hours__title{
+    font-size: 1.5rem;
+    margin-bottom: 0.625rem;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.hours__list{
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+.hours__item{
+    font-size: 1rem;
+    margin: 0.313rem;
+    color: var(--primary-color);
+}
 /* responsive design */
 @media (max-width: 48rem) {
     .contact {
         grid-template-columns: 1fr; /* 1 columna */
+    }
+    iframe {
+        height: 15rem;
     }
 }
