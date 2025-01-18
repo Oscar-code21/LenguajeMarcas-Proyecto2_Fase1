@@ -384,3 +384,119 @@ iframe {
         height: 15rem; /* Altura del mapa */
     }
 }
+
+
+/* Css para la pagina de servicios */
+
+.products {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.products__title {
+    font-size: 2.5rem; /* Tamaño del título */
+    color: #333;
+    text-align: center;
+    margin-bottom: 2rem;
+    animation: fadeIn 1s ease-out; /* Animación */
+}
+
+/* Secciones de Productos */
+.products__section {
+    margin-bottom: 2rem;
+    animation: fadeIn 0.8s ease-in-out; /* Animación */
+} 
+
+.products__section-title {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1rem;
+    animation: fadeIn 1s ease-out; /* Animación */
+}
+
+.products__section-description {
+    font-size: 1.1rem;
+    color: #555;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    animation: fadeIn 1.2s ease-out; /* Animación */
+}
+
+/* Rejilla de Productos */
+.products__list {
+    display: grid; /* Uso del grid */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Ajuste automático de columnas */
+    gap: 1.5rem;
+    list-style: none; /* Quitar viñetas */
+    padding: 0; /* Quitar relleno */
+}
+
+.product {
+    background-color: #fff; /* Color de fondo */
+    padding: 1.25rem;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto al pasar el mouse */
+}
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+.product__image {
+    width: 100%;
+    height: 200px; /* Altura de la imagen */
+    object-fit: cover; /* Ajuste de la imagen */
+    margin-bottom: 1rem; /* Espacio entre elementos */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+.product__name {
+    font-size: 1.25rem; /* Tamaño del nombre */
+    color: #333;
+    margin-bottom: 0.5rem; /* Espacio entre elementos */
+}
+
+.product__price {
+    font-size: 1.125rem; /* Tamaño del precio */
+    color: #e74c3c;
+    margin-bottom: 1rem; /* Espacio entre elementos */
+}
+
+.product__button {
+    padding: 0.5rem 1rem;
+    background-color: #e74c3c;  /* Color del botón */
+    color: #fff; /* Color del texto */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Efecto al pasar el mouse */
+}
+
+.product__button:hover {
+    background-color: #c0392b; /* Color al pasar el mouse */
+    transform: translateY(-2px); /* Efecto al pasar el mouse */
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Opacidad */
+        transform: translateY(20px); /* Efecto de desplazamiento */
+    }
+    to {
+        opacity: 1; /* Opacidad */
+        transform: translateY(0); /* Efecto de desplazamiento */
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .products__grid { /* Ajuste de la rejilla */
+        grid-template-columns: 1fr; /* 1 columna */
+    }
+}
+
