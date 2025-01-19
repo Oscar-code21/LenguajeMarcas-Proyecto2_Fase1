@@ -389,7 +389,7 @@ iframe {
 /* Css para la pagina de servicios */
 
 .products {
-    max-width: 1200px;
+    max-width: 75rem; /* Ancho máximo */
     margin: 0 auto;
 }
 
@@ -435,23 +435,23 @@ iframe {
 .product {
     background-color: #fff; /* Color de fondo */
     padding: 1.25rem;
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    border-radius: 0.5rem; /* Bordes redondeados */
+    box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1); /* Sombra */
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto al pasar el mouse */
 }
 
 .product:hover {
     transform: scale(1.05);
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Sombra */
+    box-shadow: 0 0.25rem 0.938rem rgba(0, 0, 0, 0.2); /* Sombra */
 }
 
 .product__image {
     width: 100%;
-    height: 200px; /* Altura de la imagen */
+    height: 12.5rem; /* Altura de la imagen */
     object-fit: cover; /* Ajuste de la imagen */
     margin-bottom: 1rem; /* Espacio entre elementos */
-    border-radius: 8px; /* Bordes redondeados */
+    border-radius: 0.5rem; /* Bordes redondeados */
 }
 
 .product__name {
@@ -471,21 +471,21 @@ iframe {
     background-color: #e74c3c;  /* Color del botón */
     color: #fff; /* Color del texto */
     border: none;
-    border-radius: 5px;
+    border-radius: 0.313rem;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease; /* Efecto al pasar el mouse */
 }
 
 .product__button:hover {
     background-color: #c0392b; /* Color al pasar el mouse */
-    transform: translateY(-2px); /* Efecto al pasar el mouse */
+    transform: translateY(-0.125rem); /* Efecto al pasar el mouse */
 }
 
 /* Animaciones */
 @keyframes fadeIn {
     from {
         opacity: 0; /* Opacidad */
-        transform: translateY(20px); /* Efecto de desplazamiento */
+        transform: translateY(1.25rem); /* Efecto de desplazamiento */
     }
     to {
         opacity: 1; /* Opacidad */
@@ -500,3 +500,155 @@ iframe {
     }
 }
 
+
+/* Css para la pagina adicional*/
+
+/* Hero Section */
+.hero {
+    text-align: center; /* Alineación del texto */
+    background-color: var(--primary-color); /* Color de fondo */
+    color: #e0e0e0;
+    padding: 3rem 1rem;
+    border-radius: 0.625rem; /* Bordes redondeados */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2); /* Sombra */
+    
+}
+
+.hero__title {
+    font-size: 3rem; /* Tamaño del título */
+    margin-bottom: 1rem; /* Espacio entre elementos */
+    font-weight: bold;  
+} 
+
+.hero__subtitle {
+    font-size: 1.5rem;  /* Tamaño del subtítulo */
+}
+
+/* Gallery Section */
+.gallery {
+    text-align: center; /* Alineación del texto */
+    
+}
+
+.gallery__title {
+    font-size: 2rem;
+    color: var(--primary-color); /* Color del texto */
+    margin-bottom: 2rem;
+}
+
+.gallery__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajuste automático de columnas */
+    gap: 2rem;
+    padding: 0; /* Quitar relleno */
+    list-style: none; /* Quitar viñetas */
+}
+
+.gallery__item {
+    border-radius: 0.625rem; /* Bordes redondeados */
+    overflow: hidden;
+    box-shadow: 0 0.25rem 0.375rem  rgba(0, 0, 0, 0.1); /* Sombra */
+    transition: transform 0.3s ease; /* Efecto al pasar el mouse */
+}
+
+.gallery__item:hover {
+    transform: scale(1.05); /* Efecto al pasar el mouse */
+}
+
+.gallery__image {
+    width: 100%; /* Ancho */
+    height: auto; /* Altura automática */
+    display: block; /* Bloque */
+}
+
+.gallery__caption {
+    background-color: var(--primary-color); /* Color de fondo */
+    color: var(--text-color-light); /* Color del texto */
+    text-align: center; /* Alineación del texto */
+    padding: 0.5rem;
+    font-size: 1rem; /* Tamaño del texto */
+}
+
+/* Tips Section */
+.tips {
+    background-color: #f9f9f9; /* Color de fondo */
+    padding: 2rem 1.5rem;
+    border-radius: 0.625rem; /* Bordes redondeados */
+    box-shadow: 0 25rem 375rem rgba(0, 0, 0, 0.1); /* Sombra */
+   
+}
+
+.tips__title {
+    font-size: 2rem; /* Tamaño del título */
+    color: var(--primary-color); /* Color del texto */
+    margin-bottom: 1rem; /* Espacio entre elementos */
+    text-align: center;
+}
+
+.tips__item {
+    font-size: 1.25rem; /* Tamaño del texto */
+    margin-bottom: 1rem; /* Espacio entre elementos */
+    color: #555;
+    line-height: 1.6; /* Espaciado entre líneas */
+    position: relative; /* Posición relativa */
+    padding-left: 1.5rem; /* Espacio interno izquierdo */
+}
+
+/* Events Section */
+.events {
+    background-color: var(--primary-color); /* Color de fondo */
+    color: #e0e0e0;
+    padding: 2rem 1.5rem; /* Espacio interno */
+    border-radius: 0.625rem;
+    box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1); /* Sombra */
+    
+}
+
+.events__title {
+    font-size: 2rem;
+    margin-bottom: 1rem; /* Espacio entre elementos */
+    text-align: center; /* Alineación del texto */
+}
+
+.events__list {
+    list-style: none; /* Quitar viñetas */
+    padding: 0;
+    margin: 0; /* Quitar margen */
+} 
+
+.events__item {
+    margin-bottom: 1.5rem; /* Espacio entre elementos */
+    padding: 1rem; /* Espacio interno */
+    border-bottom: 0.063rem solid rgba(255, 255, 255, 0.5); /* Borde inferior */
+}
+
+.events__name {
+    font-size: 1.5rem; /* Tamaño del nombre */
+    font-weight: bold; 
+}
+
+.events__date,.events__location {
+    font-size: 1rem; /* Tamaño del texto */
+    margin-top: 0.5rem; /* Espacio superior */
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 48rem) {
+    .hero__title {
+        font-size: 2.5rem; /* Tamaño del título */
+    }
+
+    .gallery__list {
+        grid-template-columns: 1fr;
+    }
+
+    .tips__item {
+        font-size: 1rem; /* Tamaño del texto */
+    }
+
+    .events__name {
+        font-size: 1.25rem; /* Tamaño del nombre */
+    }
+}
