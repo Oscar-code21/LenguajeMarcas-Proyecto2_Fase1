@@ -28,3 +28,7 @@ En esta página contendras una galeria de imagenes de motos con unos consejos pa
 
 ![Erro en el Css](./assets/csserror.PNG)
 
+
+
+El erro a sido que no le eh puesto el formato, para arreglarlo lo unico que debia hacer es poner rem y fin
+
