@@ -32,3 +32,10 @@ En esta página contendras una galeria de imagenes de motos con unos consejos pa
 
 ### El error a sido que no le he puesto el formato, para arreglarlo lo unico que debia hacer es poner rem y fin.
 
+
+
+
+# Validación HTML
+
+![Error en el HTML](.assets/
+
