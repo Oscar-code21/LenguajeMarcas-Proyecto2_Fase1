@@ -7,11 +7,14 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+        <!-- Este bloque de código define la cabecera del sitio web. Contiene el logotipo de Raiders Zone y la barra de navegación. -->
     <header class="header">
+
         <section class="header__branding">
             <img src="assets/logodepaginamotos.PNG" alt="logo Raider Zone" class="header__logo-image">
         </section>
         <h1 class="header__logo">Raiders Zone</h1>
+        <!-- Este bloque de código define la barra de navegación del sitio web. Contiene una lista de enlaces a diferentes páginas: Inicio, Servicios, Contacto y Eventos. -->
         <nav class="header__nav">
             <ul class="nav__list">
                 <li class="nav__item"><a href="pagina_principal.html" class="nav__link">Inicio</a></li>
@@ -20,11 +23,13 @@
                 <li class="nav__item"><a href="pagina_adicional.html" class="nav__link">Eventos</a></li>
             </ul>
         </nav>
+        <!-- Este bloque de código define los controles de la cabecera, como la barra de búsqueda y el interruptor de modo oscuro. -->
         <section class="header__controls">
             <form class="header__search-bar">
                 <input type="text" class="search-bar__input" placeholder="Buscar...">
                 <button class="search-bar__button">Buscar</button>
             </form>
+            <!-- Este bloque de código define el interruptor de modo oscuro, que permite a los usuarios cambiar entre el modo claro y el modo oscuro del sitio web. -->
             <section class="header__dark-mode-toggle">
                 <label class="dark-mode__label">
                     <input type="checkbox" class="dark-mode__checkbox">
@@ -35,36 +40,39 @@
     </header>
 
     <main>
+        <!-- Este bloque de código define la sección hero, que contiene el título principal y el subtítulo de la página. -->
         <section class="hero">
             <h1 class="hero__title">Pasion sobre las ruedas</h1>
             <p class="hero__subtitle">Explora el mundo de las motos, sus historias y su cultura</p>
         </section>
 
+        <!-- Este bloque de código define la sección de servicios, que presenta una lista de servicios ofrecidos por Raiders Zone. -->
         <section class="gallery">
             <h2 class="gallery__title">Galería de motos</h2>
             <ul class="gallery__list">
                 <li class="gallery__item">
-                    <figure>
+                    <article>
                         <img src="assets/suzukimoto.PNG" alt="Moto 1" class="gallery__image">
-                        <figcaption class="gallery__caption">Moto deportiva</figcaption>
-                    </figure>
+                        <h3 class="gallery__caption">Moto deportiva</h3>
+                    </article>
                 </li>
+
                 <li class="gallery__item">
-                    <figure>
+                    <article>
                         <img src="assets/motosuzuki.PNG" alt="Moto 2" class="gallery__image">
-                        <figcaption class="gallery__caption">Moto de pista</figcaption>
-                    </figure>
+                        <h3 class="gallery__caption">Moto de pista</h3>
+                    </article>
                 </li>
                 <li class="gallery__item">
-                    <figure>
+                    <article>
                         <img src="assets/crosssuzuki.PNG" alt="Moto 3" class="gallery__image">
-                        <figcaption class="gallery__caption">Moto de cross</figcaption>
-                    </figure>
+                        <h3 class="gallery__caption">Moto de Cross</h3>
+                    </article>
                 </li>
                    
             </ul>
         </section>
-
+        <!-- Este bloque de código define la sección de consejos, que proporciona recomendaciones útiles para los motociclistas. -->
         <section class="tips">
             <h2 class="tips__title">Consejos para motociclistas</h2>
             <ul>
@@ -73,7 +81,7 @@
                 <li class="tips__item">Usa siempre casco y guantes para protegerte en caso de caídas</li>
             </ul>
         </section>
-
+        <!-- Este bloque de código define la sección de eventos, que muestra una lista de próximos eventos relacionados con las motos. -->
         <section class="events">
             <h2 class="events__title">Próximos eventos</h2>
             <ul class="events__list">
@@ -90,7 +98,7 @@
             </ul>
         </section>
     </main>
-
+    <!-- Este bloque de código define el pie de página del sitio web, que contiene información de contacto y enlaces a las redes sociales. -->
     <footer class="footer">
         <p class="footer__text">Raiders Zone - 2025</p>
     </footer>

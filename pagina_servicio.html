@@ -7,11 +7,14 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <!-- Este bloque de código define la cabecera del sitio web. Contiene el logotipo de Raiders Zone y la barra de navegación. -->
     <header class="header">
+
         <section class="header__branding">
             <img src="assets/logodepaginamotos.PNG" alt="logo Raider Zone" class="header__logo-image">
         </section>
         <h1 class="header__logo">Raiders Zone</h1>
+        <!-- Este bloque de código define la barra de navegación del sitio web. Contiene una lista de enlaces a diferentes páginas: Inicio, Servicios, Contacto y Eventos. -->
         <nav class="header__nav">
             <ul class="nav__list">
                 <li class="nav__item"><a href="pagina_principal.html" class="nav__link">Inicio</a></li>
@@ -20,11 +23,13 @@
                 <li class="nav__item"><a href="pagina_adicional.html" class="nav__link">Eventos</a></li>
             </ul>
         </nav>
+        <!-- Este bloque de código contiene los controles de la cabecera, como la barra de búsqueda y el interruptor de modo oscuro. -->
         <section class="header__controls">
             <form class="header__search-bar">
                 <input type="text" class="search-bar__input" placeholder="Buscar...">
                 <button class="search-bar__button">Buscar</button>
             </form>
+            <!-- Este bloque de código define el interruptor de modo oscuro, que permite a los usuarios cambiar entre el modo claro y el modo oscuro del sitio web. -->
             <section class="header__dark-mode-toggle">
                 <label class="dark-mode__label">
                     <input type="checkbox" class="dark-mode__checkbox">
@@ -34,122 +39,135 @@
         </section>
     </header>
      <!-- Sección de Productos dentro de main -->
-    <main>
+     <main>
         <section class="products">
             <header>
                 <h2 class="products__title">Nuestros Productos</h2>
             </header>
-            
+    
             <!-- Sección de Motocicletas -->
             <section class="products__section">
                 <h3 class="products__section-title">Motocicletas</h3>
-                <p class="products__section-description">Encuentra las mejores motocicletas, desde modelos deportivos hasta Enduro.</p>
+                <p class="products__section-description">Encuentra las mejores motocicletas del mercado.</p>
                 <ul class="products__list">
-                    <article class="product">
-                        <img src="assets/yamahar1.PNG" alt="Motocicleta Yamaha R1" class="product__image">
-                        <h4 class="product__name"> Yamaha R1</h4>
-                        <p class="product__price">30.899€</p>
-                        <!--esto es sobre todo con el fin de que el usuario pueda añadir al carrito de compra los productos que desee y su funcionalidad es con javascript-->
-                        <button class="product__button">Añadir al carrito</button>
-                    </article>
-                    <article class="product">
-                        <img src="assets/HONDAMOTO.PNG" alt="Motocicleta Honda CBR1000RR" class="product__image">
-                        <h4 class="product__name">Honda CBR1000RR</h4>
-                        <p class="product__price">29.800€</p>
-                       <!--esto es sobre todo con el fin de que el usuario pueda añadir al carrito de compra los productos que desee y su funcionalidad es con javascript-->
-                        <button class="product__button">Añadir al carrito</button>
-                    </article>
-                    <article class="product">
-                        <img src="assets/BWMSR100.PNG" alt="Motocicleta BMW S1000RR" class="product__image">
-                        <h4 class="product__name">BMW S1000RR</h4>
-                        <p class="product__price">28.000€</p>
-                        <!--esto es sobre todo con el fin de que el usuario pueda añadir al carrito de compra los productos que desee y su funcionalidad es con javascript-->
-                        <button class="product__button">Añadir al carrito</button>
-                    </article>
-                    <article class="product">
-                        <img src="assets/yamahacross.PNG" alt="Yamaha YZ250" class="product__image">
-                        <h4 class="product__name">Yamaha YZ250</h4>
-                        <p class="product__price">9.099€</p>
-                        <!--esto es sobre todo con el fin de que el usuario pueda añadir al carrito de compra los productos que desee y su funcionalidad es con javascript-->
-                        <button class="product__button">Añadir al carrito</button>
-                    </article>
+                    <li class="product">
+                        <section>
+                            <img src="assets/yamahar1.PNG" alt="Motocicleta Yamaha R1" class="product__image">
+                            <h4 class="product__name">Yamaha R1</h4>
+                            <p class="product__price">30.899€</p>
+                            <button class="product__button">Añadir al carrito</button>
+                        </section>
+                    </li>
+                    <li class="product">
+                        <section>
+                            <img src="assets/HONDAMOTO.PNG" alt="Motocicleta Honda CBR1000RR" class="product__image">
+                            <h4 class="product__name">Honda CBR1000RR</h4>
+                            <p class="product__price">29.800€</p>
+                            <button class="product__button">Añadir al carrito</button>
+                        </section>
+                    </li>
+                    <li class="product">
+                        <section>
+                            <img src="assets/BWMSR100.PNG" alt="Motocicleta BMW S1000RR" class="product__image">
+                            <h4 class="product__name">BMW S1000RR</h4>
+                            <p class="product__price">28.000€</p>
+                            <button class="product__button">Añadir al carrito</button>
+                        </section>
+                    </li>
+                    <li class="product">
+                        <section>
+                            <img src="assets/yamahacross.PNG" alt="Yamaha YZ250" class="product__image">
+                            <h4 class="product__name">Yamaha YZ250</h4>
+                            <p class="product__price">9.099€</p>
+                            <button class="product__button">Añadir al carrito</button>
+                        </section>
+                    </li>
                 </ul>
             </section>
     
-
             <!-- Sección de Accesorios -->
             <section class="products__section">
                 <h3 class="products__section-title">Accesorios</h3>
                 <p class="products__section-description">Equipamiento y accesorios de alta calidad para motociclistas.</p>
                 <ul class="products__list">
-                    <article class="product">
-                        <img src="assets/Casco_AGV_K1_S_Black.PNG" alt="Casco AGV K1 S Black" class="product__image">
-                        <h4 class="product__name"> Casco AGV K1 S Black</h4>
-                        <p class="product__price">159,96€</p>
-                        <!--esto es sobre todo con el fin de que el usuario pueda añadir al carrito de compra los productos que desee y su funcionalidad es con javascript-->
-                        <button class="product__button">Añadir al carrito</button>
-                    </article>
-                    <article class="product">
-                        <img src="assets/monoblancodemoto.PNG" alt="ARMURE Pack Milan Vented Ivory/Red" class="product__image">
-                        <h4 class="product__name">ARMURE Pack Milan Vented Ivory/Red</h4>
-                        <p class="product__price">189,91 €</p>
-                        <!--esto es sobre todo con el fin de que el usuario pueda añadir al carrito de compra los productos que desee y su funcionalidad es con javascript-->
-                        <button class="product__button">Añadir al carrito</button>
-                    </article>
-                    <article class="product">
-                        <img src="assets/botasmoto.PNG" alt="Botas ALPINESTARS Web Gore-Tex Black" class="product__image">
-                        <h4 class="product__name">Botas ALPINESTARS Web Gore-Tex Black</h4>
-                        <p class="product__price">209,96€</p>
-                        <!--esto es sobre todo con el fin de que el usuario pueda añadir al carrito de compra los productos que desee y su funcionalidad es con javascript-->
-                        <button class="product__button">Añadir al carrito</button>
-                    </article>
-                    <article class="product">
-                        <img src="assets/Guantes_ALPINESTARS_Corozal_V3_Drystar_Black.PNG" alt="Guantes ALPINESTARS Corozal V3 Drystar Black" class="product__image">
-                        <h4 class="product__name">Guantes ALPINESTARS Corozal V3 Drystar Black</h4>
-                        <p class="product__price">98,96€</p>
-                        <!--esto es sobre todo con el fin de que el usuario pueda añadir al carrito de compra los productos que desee y su funcionalidad es con javascript-->
-                        <button class="product__button">Añadir al carrito</button>
-                    </article>
+                    <li class="product">
+                        <section>
+                            <img src="assets/Casco_AGV_K1_S_Black.PNG" alt="Casco AGV K1 S Black" class="product__image">
+                            <h4 class="product__name">Casco AGV K1 S Black</h4>
+                            <p class="product__price">159,96€</p>
+                            <button class="product__button">Añadir al carrito</button>
+                        </section>
+                    </li>
+                    <li class="product">
+                        <section>
+                            <img src="assets/monoblancodemoto.PNG" alt="ARMURE Pack Milan Vented Ivory/Red" class="product__image">
+                            <h4 class="product__name">ARMURE Pack Milan Vented Ivory/Red</h4>
+                            <p class="product__price">189,91 €</p>
+                            <button class="product__button">Añadir al carrito</button>
+                        </section>
+                    </li>
+                    <li class="product">
+                        <section>
+                            <img src="assets/botasmoto.PNG" alt="Botas ALPINESTARS Web Gore-Tex Black" class="product__image">
+                            <h4 class="product__name">Botas ALPINESTARS Web Gore-Tex Black</h4>
+                            <p class="product__price">209,96€</p>
+                            <button class="product__button">Añadir al carrito</button>
+                        </section>
+                    </li>
+                    <li class="product">
+                        <section>
+                            <img src="assets/Guantes_ALPINESTARS_Corozal_V3_Drystar_Black.PNG" alt="Guantes ALPINESTARS Corozal V3 Drystar Black" class="product__image">
+                            <h4 class="product__name">Guantes ALPINESTARS Corozal V3 Drystar Black</h4>
+                            <p class="product__price">98,96€</p>
+                            <button class="product__button">Añadir al carrito</button>
+                        </section>
+                    </li>
                 </ul>
             </section>
-
-            <!-- Sección de Ropa -->
+    
+            <!-- Sección de Ropa para Motociclistas -->
             <section class="products__section">
                 <h3 class="products__section-title">Ropa para Motociclistas</h3>
                 <p class="products__section-description">Ropa de calle para disfrutar de las mejores marcas.</p>
                 <ul class="products__list">
-                    <article class="product">
-                        <img src="assets/paddock_blue_ridiging_para_hombre.PNG" alt="paddock_blue_ridiging_para_hombre" class="product__image">
-                        <h4 class="product__name"> Sudadera con capucha Paddock Blue Riding para hombre</h4>
-                        <p class="product__price">99,99€</p>
-                        <!--esto es sobre todo con el fin de que el usuario pueda añaidr al carrito de compra los productos que desee y su funcionalidad es con javascript-->
-                        <button class="product__button">Añadir al carrito</button>
-                    </article>
-                    <article class="product">
-                        <img src="assets/camiseta_del_equipo_monster_energy.PNG" alt="camiseta del equipo moster energy" class="product__image">
-                        <h4 class="product__name">camiseta del equipo moster energy</h4>
-                        <p class="product__price">52,00€</p>
-                        <!--esto es sobre todo con el fin de que el usuario pueda añadir al carrito  de compra los productos que desee y su funcionalidad es con javascript-->
-                        <button class="product__button">Añadir al carrito</button>
-                    </article>
-                    <article class="product">
-                        <img src="assets/sudadera_capucha_red_bull.PNG" alt="sudadera capucha red bull" class="product__image">
-                        <h4 class="product__name">sudadera capucha red bull</h4>
-                        <p class="product__price">84,75€</p>
-                        <!--esto es sobre todo con el fin de que el usuario pueda añadir al carrito  de compra los productos que desee y su funcionalidad es con javascript-->
-                        <button class="product__button">Añadir al carrito</button>
-                    </article>
-                    <article class="product">
-                        <img src="assets/camiseta_red_bull_ktm.PNG" alt="camiseta red bull ktm" class="product__image">
-                        <h4 class="product__name">camiseta red bull ktm</h4>
-                        <p class="product__price">39,95€</p>
-                        <!-- esto es sobre todo se hace con el fin de que el usuario pueda añadir al carrito de compra los productos que desee Y su funcionalidad es con javascript -->
-                        <button class="product__button">Añadir al carrito</button>
-                    </article>
+                    <li class="product">
+                        <section>
+                            <img src="assets/paddock_blue_ridiging_para_hombre.PNG" alt="paddock_blue_ridiging_para_hombre" class="product__image">
+                            <h4 class="product__name">Sudadera con capucha Paddock Blue Riding para hombre</h4>
+                            <p class="product__price">99,99€</p>
+                            <button class="product__button">Añadir al carrito</button>
+                        </section>
+                    </li>
+                    <li class="product">
+                        <section>
+                            <img src="assets/camiseta_del_equipo_monster_energy.PNG" alt="camiseta del equipo moster energy" class="product__image">
+                            <h4 class="product__name">Camiseta del equipo Monster Energy</h4>
+                            <p class="product__price">52,00€</p>
+                            <button class="product__button">Añadir al carrito</button>
+                        </section>
+                    </li>
+                    <li class="product">
+                        <section>
+                            <img src="assets/sudadera_capucha_red_bull.PNG" alt="sudadera capucha red bull" class="product__image">
+                            <h4 class="product__name">Sudadera con capucha Red Bull</h4>
+                            <p class="product__price">84,75€</p>
+                            <button class="product__button">Añadir al carrito</button>
+                        </section>
+                    </li>
+                    <li class="product">
+                        <section>
+                            <img src="assets/camiseta_red_bull_ktm.PNG" alt="camiseta red bull ktm" class="product__image">
+                            <h4 class="product__name">Camiseta Red Bull KTM</h4>
+                            <p class="product__price">39,95€</p>
+                            <button class="product__button">Añadir al carrito</button>
+                        </section>
+                    </li>
                 </ul>
             </section>
         </section>
     </main>
+    
+    <!-- Footer -->
      <footer class="footer">
         <p class="footer__text">Raiders Zone - 2025</p>
     </footer>
