@@ -26,4 +26,5 @@ En esta página contendras una galeria de imagenes de motos con unos consejos pa
 
 # Validación de CSS
 
-![Erro en el Css](./assets/
+![Erro en el Css](./assets/csserror.PNG)
+
