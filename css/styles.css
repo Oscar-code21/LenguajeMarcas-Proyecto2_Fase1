@@ -39,21 +39,21 @@ body.dark-mode {
 }
 .header__branding {
     display: flex;
-    align-items: center;
+    align-items: center; /*alineacion de elementos*/
     gap: 0.938rem; /*espacio entre elementos*/
 }
 .header__logo-image {
-    width: 3.75rem;
+    width: 3.75rem; /*tamaño del logo*/
     height: auto; 
 }
 .header__logo {
     font-size: 1.5rem; /*tamaño del logo*/
-    font-weight: bold;
+    font-weight: bold; /*negrita*/
 }
 
 .header__nav .nav__list {
-    display: flex;
-    gap: 1.25rem;
+    display: flex; /*uso del flexbox*/
+    gap: 1.25rem; /*espacio entre elementos*/
     list-style: none; /*quitar viñetas*/
 }
 
@@ -61,7 +61,7 @@ body.dark-mode {
     color: var(--text-color); /*color del texto*/
     text-decoration: none; /*quitar subrayado*/
     font-size: 1.25rem;
-    transition: color 0.3s;
+    transition: color 0.3s; /*efecto al pasar el mouse*/
 }
 
 .nav__link:hover {
@@ -69,7 +69,7 @@ body.dark-mode {
 }
 /* controles del header */
 .header__controls {
-    display: flex;
+    display: flex;  /*uso del flexbox*/
     align-items: center; /*alineacion de elementos*/
     gap: 1.25rem;
 }
@@ -82,7 +82,7 @@ body.dark-mode {
 .search-bar__input {
     padding: 0.313rem;
     font-size: 1rem; /*tamaño de la fuente*/
-    border: 0.063 solid #ccc; /*borde del input*/
+    border: 0.063rem solid #ccc; /*borde del input*/
     border-radius: 0.25rem; /*borde redondeado*/
 }
 
@@ -90,9 +90,9 @@ body.dark-mode {
     padding: 0.313rem 0.625rem;
     background-color: var(--secondary-color); /*color del boton*/
     color: var(--text-color); /*color del texto*/
-    border: none;
+    border: none; /*quitar borde*/
     border-radius: 0.25rem; /*borde redondeado*/
-    cursor: pointer;
+    cursor: pointer; /*cursor al pasar el mouse*/
     transition: background-color 0.3s; /*efecto al pasar el mouse*/
 }
 
@@ -275,16 +275,16 @@ footer {
 }
 /* Css para la pagina de contacto */
 .contact {
-    display: grid;
+    display: grid; 
     grid-template-columns: 1fr 1fr; /* 2 columnas */
-    gap: 2.5rem;
+    gap: 2.5rem; /* Espacio entre columnas */
     margin-top: 1.25rem; /* Espacio entre elementos */
 }
 
 .contact__form {
     display: flex;
     flex-direction: column; /* columnas */
-    gap: 1.25rem;
+    gap: 1.25rem; /* Espacio entre elementos */
 }
 
 .contact__label {
@@ -295,10 +295,10 @@ footer {
 .contact__input, 
 .contact__textarea {
     padding: 0.625rem; /* Ajuste razonable */
-    font-size: 1rem;
+    font-size: 1rem; /* Ajuste razonable */
     border: 0.063rem solid #ccc; /* Borde del input */
     border-radius: 0.25rem; /* Bordes redondeados */
-    width: 100%;
+    width: 100%; /* Ancho completo */
 }
 
 .contact__textarea {
@@ -335,8 +335,8 @@ footer {
 }
 
 .location {
-    margin: 2rem 0;
-    padding: 1rem;
+    margin: 2rem 0; /* Espacio entre elementos */
+    padding: 1rem; /* Espacio interno */
     background-color: #f9f9f9; /* Color de fondo */
     border: 0.063rem solid #ccc; /* Borde */
     border-radius: 0.5rem; /* Bordes redondeados */
