@@ -12,4 +12,18 @@ En resumen es un pequeño avance de lo que te podrias encontrar en la pagina de 
 
 # Pagina de contacto
 
-Aqui pues veria un pequeño formulario donde podras contactar con nosotros donde podrias poner vuestro nombre, correo, teléfono, edad y tambien podras escribir un mensaje de cuestión que tengas o el problema que tengas y tambien tendras una pequeña información para poder contactar con nosotros y la dirección donde nos encontramos, que tambien  tendras implementado en la parte superior donde 
+Aqui pues ver un pequeño formulario donde podras contactar con nosotros donde podrias poner vuestro nombre, correo, teléfono, edad y tambien podras escribir un mensaje de cuestión que tengas o el problema que tengas, tambien contendras información para contactar con nosotros por correo o llamandonos donde tambien tendras la dirección de nuestra empresa donde vendra implementada en el google maps y tambien al final tendras la hora donde la empresa estara disponible para arreglar consultas.
+
+# Página de Servicio
+
+Aqui contendras los productos que puedes encontrar en nuestra tienda con su respectivo precio, que podras encontrar tanto motos, com accesorios para su seguridad en la moto como ropa de calle para estar mas comodo y ser un autentico fan de las motos.
+
+# Página de Eventos
+
+En esta página contendras una galeria de imagenes de motos con unos consejos para estar mas seguro encima de la moto y lo mas importante los proximos eventos de ruta que podras participar si contienes motos.
+
+
+
+# Validación de CSS
+
+![Erro en el Css](./assets/
