@@ -30,5 +30,5 @@ En esta página contendras una galeria de imagenes de motos con unos consejos pa
 
 
 
-El erro a sido que no le he puesto el formato, para arreglarlo lo unico que debia hacer es poner rem y fin
+### El error a sido que no le he puesto el formato, para arreglarlo lo unico que debia hacer es poner rem y fin.
 
