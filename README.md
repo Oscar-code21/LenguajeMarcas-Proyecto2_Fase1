@@ -17,21 +17,71 @@ Pues hemos creado una Pagina web con cuantro secciones principales diferenciadas
 
 # Estructura de una página
 
-### HTML
+## HTML
 
--Usamos etiquetas claras como header, footer, main y para que la estructura de la página tenga sentido.
+El html es el lenguaje base para estructurar contenido en la web, funciona como el esqueleto de tu sitio, definiendo que elementos aparecen y como estan organizados
 
--Comentarios utiles dentro del código, para que sepas en que consiste cada apartado.
+## Etiquetas utilizada
+- Header : El encabezado de la pagina, que contiene el logo, menú de navegación, el dark mode y la barra de busqueda
+- main : Contiene el contenido principal de la página
+- footer : El pie de página, donde esta colocado los derechos de autor
+- section : Lo que divide el contenido en bloques, como "Productos", "Consejos" o "Detalles de contacto"
+- article : Es lo que contiene el contenido inpendiente como las descripciones de los productos
+- img : Muestra las imagenes, y utilización de atributos como src (que es la ruta de la imagen) y alt (descripción de la imagen).
 
--Validación todo con W3C Validator para no cometer errores.
+### Como optener buenas practicas 
 
-### CSS
+- Comentarios utiles dentro del código, para que sepas en que consiste cada apartado.
+- Validación todo con W3C Validator para no cometer errores.
+- Usar etiquetas que describan claramente el proposito de cada sección.
 
+
+## CSS
+
+El css es el lenguaje que controla el estilo y diseño visual del HTML, que define como se ve los elementos dentro de la página Web.
+
+### Caracteristicas del Css en mi proyecto
+
+- Metodologia BEM: Dividimos las clases en bloques, elementos y modificadores para mantener claridad y consistencia.
+
+- Responsive Desing: Usamos media queries para adaprtarlo a otras plataforma con doferentes tamaño de pantalla.
+  @media (max-width: 768px) {
+    .nav__list {
+        flex-direction: column;
+    }
+}
+
+ - Variable Css: Usamos variables para mas consistencia.
+   :root {
+    --primary-color: #ff4500;
+    --background-dark: #1a1a1a;
+    --font-size-base: 16px;
+}
+body {
+    color: var(--primary-color);
+    background-color: var(--background-dark);
+}
+
+- Dark Mode: Cambio entre modo oscuro y modo claro
+  body.dark-mode {
+    --background-dark: #ffffff;
+    --primary-color: #000000;
+}
+
+- Animaciones y transiciones : Agregamos animaciones suaves para mejorar la visibilidad del que vea tu pagina web.
+  .button {
+    transition: background-color 0.3s ease;
+}
+.button:hover {
+    background-color: var(--primary-color);
+}
+
+### Buenas praticas de Css
 - Todo estara centralizado a un mismo css para tener consistencia y todo bien ordenado siguiendo una metodologia BEM.
 - Usaremos variables para colores,fuentes y tamaños.
-- Diseño responsive con media queries, para que se vea bien  en todas las plataformas.
-- Implementación de transiciones suaves y animaciones para hacerlo mas moderno.
-- Implementación de Dark Mode..
+- Evitar repetir propiedades con el uso de variables y clases reutilizables.
+- Documentar el código para su comprensión
+  
 
 ## Herramientas utilizadas
 
