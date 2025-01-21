@@ -35,8 +35,15 @@ Pues hemos creado una Pagina web con cuantro secciones principales diferenciadas
 
 ## Herramientas utilizadas
 
-Visual Studio Code ,
+Visual Studio Code,
 Git/Github
+
+# Como poder ver tu mismo la Página
+
+1. Clonaremos este repositorio
+   git clone <URL_del_repositorio>
+2. Abre el archivo clonado en el navegador que te apetezca (Mi caso es Firefox)
+3. Explora todas las secciones que hay en esta pagina utilizando el menu de navegación
 
 
 
