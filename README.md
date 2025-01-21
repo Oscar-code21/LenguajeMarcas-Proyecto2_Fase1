@@ -7,7 +7,7 @@ eventos y mucho mas.
 
 Pues hemos creado una Pagina web con cuantro secciones principales diferenciadas:
 
-1.Página Principal: Un vistazo en general de lo que ofrece Raiders Zone, con destacados con comentarios de nuestra comunidad y productos exclusivos.
+1.Página Principal: Un vistazo en general de lo que ofrece Raiders Zone, con destacados con comentarios de nuestra comunidad y productos exclusivos, desde 
 
 2.Servicio: Un catalogo donde encontraras motos, accesorios y ropa que te harán querer disfrutar de la pasión de las motos.
 
