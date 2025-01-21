@@ -46,39 +46,39 @@ El css es el lenguaje que controla el estilo y diseño visual del HTML, que defi
 
 - Responsive Desing: Usamos media queries para adaprtarlo a otras plataforma con doferentes tamaño de pantalla.
 
- @media (max-width: 768px) {
-    .nav__list {
+  @media (max-width: 768px) {
+     .nav__list {
         flex-direction: column;
-    }
-}
+     }
+ }
 
  - Variable Css: Usamos variables para mas consistencia.
 
- :root {
-    --primary-color: #ff4500;
-    --background-dark: #1a1a1a;
-    --font-size-base: 16px;
-}
-body {
-    color: var(--primary-color);
-    background-color: var(--background-dark);
-}
+  :root {
+     --primary-color: #ff4500;
+     --background-dark: #1a1a1a;
+     --font-size-base: 16px;
+ }
+ body {
+     color: var(--primary-color);
+     background-color: var(--background-dark);
+ }
 
 - Dark Mode: Cambio entre modo oscuro y modo claro
 
-body.dark-mode {
-    --background-dark: #ffffff;
-    --primary-color: #000000;
-}
+ body.dark-mode {
+     --background-dark: #ffffff;
+     --primary-color: #000000;
+ }
 
 - Animaciones y transiciones : Agregamos animaciones suaves para mejorar la visibilidad del que vea tu pagina web.
 
-.button {
-    transition: background-color 0.3s ease;
-}
-.button:hover {
-    background-color: var(--primary-color);
-}
+ .button {
+     transition: background-color 0.3s ease;
+ }
+ .button:hover {
+     background-color: var(--primary-color);
+ }
 
 ### Buenas praticas de Css
 - Todo estara centralizado a un mismo css para tener consistencia y todo bien ordenado siguiendo una metodologia BEM.
