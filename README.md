@@ -35,7 +35,7 @@ Pues hemos creado una Pagina web con cuantro secciones principales diferenciadas
 
 ## Herramientas utilizadas
 
-Visual Studio Code
+Visual Studio Code ,
 Git/Github
 
 
