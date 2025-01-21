@@ -27,23 +27,30 @@ Pues hemos creado una Pagina web con cuantro secciones principales diferenciadas
 
 ### CSS
 
-- Todo estara centralizado a un mismo css para tener consistencia y todo bien ordenado siguiendo una metodologia BEM
+- Todo estara centralizado a un mismo css para tener consistencia y todo bien ordenado siguiendo una metodologia BEM.
 - Usaremos variables para colores,fuentes y tamaños.
-- Diseño responsive con media queries, para que se vea bien  en todas las plataformas
-- Implementación de transiciones suaves y animaciones para hacerlo mas moderno
-- Implementación de Dark Mode
+- Diseño responsive con media queries, para que se vea bien  en todas las plataformas.
+- Implementación de transiciones suaves y animaciones para hacerlo mas moderno.
+- Implementación de Dark Mode..
 
 ## Herramientas utilizadas
 
 Visual Studio Code,
 Git/Github
 
+## Validacion
+
+- Todos los html y los css han sido validados para garantizar la calidad del código con W3C Validator.
+- Realizamos pruebas en distintos navegadores para que la página este bien implementada.
+
 # Como poder ver tu mismo la Página
 
 1. Clonaremos este repositorio
    git clone <URL_del_repositorio>
-2. Abre el archivo clonado en el navegador que te apetezca (Mi caso es Firefox)
-3. Explora todas las secciones que hay en esta pagina utilizando el menu de navegación
+2. Te desplazaras hasta la carpeta del proyecto
+   cd raiders-zone
+3. Abre el archivo clonado en el navegador que te apetezca (Mi caso es Firefox)
+4. Explora todas las secciones que hay en esta pagina utilizando el menu de navegación
 
 
 
