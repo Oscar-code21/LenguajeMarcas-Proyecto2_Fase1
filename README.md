@@ -94,8 +94,9 @@ El css es el lenguaje que controla el estilo y diseño visual del HTML, que defi
 
 ## Herramientas utilizadas
 
-Visual Studio Code,
-Git/Github
+Visual Studio Code : Es el editor de texto que eh utilizado, para escribir, organizar y gestionar todo el código para mi proyecto de Raiders Zone, porque puede trabajar con diferentes programas de programación como CSS, HTML Y JavaScript
+Github : Es una plataforma en línea que te permite almacenar tu proyecto con ayuda de git y poder colaborar con otros proyectos.
+Git: Es un sistema de control de versiones que me a  ayuda a gestionar los cambios en mi proyecto, que en mi proyecto por ejemplo podria guardar varias versiones del proyecto para no perderlo nunca 
 
 ## Validacion
 
