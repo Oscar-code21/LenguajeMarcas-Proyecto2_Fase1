@@ -45,6 +45,7 @@ El css es el lenguaje que controla el estilo y diseño visual del HTML, que defi
 - Metodologia BEM: Dividimos las clases en bloques, elementos y modificadores para mantener claridad y consistencia.
 
 - Responsive Desing: Usamos media queries para adaprtarlo a otras plataforma con doferentes tamaño de pantalla.
+
   @media (max-width: 768px) {
     .nav__list {
         flex-direction: column;
@@ -52,6 +53,7 @@ El css es el lenguaje que controla el estilo y diseño visual del HTML, que defi
 }
 
  - Variable Css: Usamos variables para mas consistencia.
+
    :root {
     --primary-color: #ff4500;
     --background-dark: #1a1a1a;
@@ -63,12 +65,14 @@ body {
 }
 
 - Dark Mode: Cambio entre modo oscuro y modo claro
-  body.dark-mode {
+
+   body.dark-mode {
     --background-dark: #ffffff;
     --primary-color: #000000;
 }
 
 - Animaciones y transiciones : Agregamos animaciones suaves para mejorar la visibilidad del que vea tu pagina web.
+
   .button {
     transition: background-color 0.3s ease;
 }
