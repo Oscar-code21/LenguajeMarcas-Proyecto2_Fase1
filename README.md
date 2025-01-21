@@ -67,5 +67,5 @@ Git/Github
 ![Error en el HTML](./assets/Errorpaginaservicio.PNG)
 
 
-### El error ah sido que he estado utilizando un article como el hijo de un ul y unicamente los hijos de ul solamente pueden ser los li y para solucionarlo deberemos meter el article dentro de un li para arreglarlo y como asi unos cuantos mas pero colocandolo bien se arregla el error.
+### El error a sido que he estado utilizando un article como el hijo de un ul y unicamente los hijos de ul solamente pueden ser los li y para solucionarlo deberemos meter el article dentro de un li para arreglarlo y como asi unos cuantos mas pero colocandolo bien se arregla el error.
 
