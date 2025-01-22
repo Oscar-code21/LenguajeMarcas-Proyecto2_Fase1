@@ -29,7 +29,7 @@ El html es el lenguaje base para estructurar contenido en la web, funciona como 
 - article : Es lo que contiene el contenido inpendiente como las descripciones de los productos
 - img : Muestra las imagenes, y utilización de atributos como src (que es la ruta de la imagen) y alt (descripción de la imagen).
 
-### Como optener buenas practicas 
+### Como tener buenas practicas 
 
 - Comentarios utiles dentro del código, para que sepas en que consiste cada apartado.
 - Validación todo con W3C Validator para no cometer errores.
