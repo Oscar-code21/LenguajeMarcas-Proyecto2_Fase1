@@ -69,14 +69,14 @@ El css es el lenguaje que controla el estilo y diseño visual del HTML, que defi
 
 ```
 - Dark Mode: Cambio entre modo oscuro y modo claro
-
+```html
   body.dark-mode {
     --background-dark: #ffffff;
     --primary-color: #000000;
 }
-
+```
 - Animaciones y transiciones : Agregamos animaciones suaves para mejorar la visibilidad del que vea tu pagina web.
-
+```html
   .button {
     transition: background-color 0.3s ease;
 }
@@ -84,7 +84,7 @@ El css es el lenguaje que controla el estilo y diseño visual del HTML, que defi
     background-color: var(--primary-color);
 }
 
-
+```
 
 
 ### Buenas praticas de Css
