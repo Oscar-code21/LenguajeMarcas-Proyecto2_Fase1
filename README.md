@@ -86,12 +86,13 @@ El css es el lenguaje que controla el estilo y diseño visual del HTML, que defi
 
 ```
 - otro tipo de animación, que tendremos que colocarlo en el apartado donde quiera que se haga la animación
-  ```html
+```html
   .products__section {
     margin-bottom: 2rem;
     animation: fadeIn 0.8s ease-in-out; /* Animación */
 } 
 ```
+```html
 /* Animaciones */
 @keyframes fadeIn {
     from {
