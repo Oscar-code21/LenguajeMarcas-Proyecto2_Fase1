@@ -56,7 +56,7 @@ El css es el lenguaje que controla el estilo y diseño visual del HTML, que defi
 ```
 
   - Variable Css: Usamos variables para mas consistencia.
-
+```html
     :root {
     --primary-color: #ff4500;
     --background-dark: #1a1a1a;
@@ -67,7 +67,7 @@ El css es el lenguaje que controla el estilo y diseño visual del HTML, que defi
       background-color: var(--background-dark);
 }
 
-
+```
 - Dark Mode: Cambio entre modo oscuro y modo claro
 
   body.dark-mode {
