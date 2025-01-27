@@ -5,7 +5,7 @@ eventos y mucho mas.
 
 # En que consiste mi proyecto
 
-Pues hemos creado una Pagina web con cuantro secciones principales diferenciadas:
+Pues hemos creado una Pagina web con cuatro secciones principales diferenciadas:
 
 1.Página Principal: Un vistazo en general de lo que ofrece Raiders Zone, con destacados con comentarios de nuestra comunidad y productos exclusivos, desde 
 
@@ -85,7 +85,25 @@ El css es el lenguaje que controla el estilo y diseño visual del HTML, que defi
 }
 
 ```
-
+- otro tipo de animación, que tendremos que colocarlo en el apartado donde quiera que se haga la animación
+  ```html
+  .products__section {
+    margin-bottom: 2rem;
+    animation: fadeIn 0.8s ease-in-out; /* Animación */
+} 
+```
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Opacidad */
+        transform: translateY(1.25rem); /* Efecto de desplazamiento */
+    }
+    to {
+        opacity: 1; /* Opacidad */
+        transform: translateY(0); /* Efecto de desplazamiento */
+    }
+}
+```
 
 ### Buenas praticas de Css
 - Todo estara centralizado a un mismo css para tener consistencia y todo bien ordenado siguiendo una metodologia BEM.
