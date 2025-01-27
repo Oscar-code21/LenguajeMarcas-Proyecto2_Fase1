@@ -496,7 +496,7 @@ iframe {
 /* Css para la pagina adicional*/
 
 /* Hero Section */
-.hero {
+.first {
     text-align: center; /* Alineación del texto */
     background-color: var(--primary-color); /* Color de fondo */
     color: #e0e0e0;
@@ -506,13 +506,13 @@ iframe {
     
 }
 
-.hero__title {
+.first__title {
     font-size: 3rem; /* Tamaño del título */
     margin-bottom: 1rem; /* Espacio entre elementos */
     font-weight: bold;  
 } 
 
-.hero__subtitle {
+.first__subtitle {
     font-size: 1.5rem;  /* Tamaño del subtítulo */
 }
 
