@@ -201,15 +201,7 @@ main {
     font-size: 1rem; /*tamaño de la descripcion*/
 }
 
-/* Testimonials Section */
-.testimonials {
-    padding: 2rem; /*espacio interno*/
-    background-color: #f9f9f9;
-    margin-top: 2rem; /*espacio entre elementos*/
-    border-radius: 8px; /*borde redondeado*/
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /*sombra*/
-}
-
+/* apartado de mensajes */
 .message__title {
     font-size: 1.8rem; /*tamaño del titulo*/
     font-weight: bold; /*negrita*/
