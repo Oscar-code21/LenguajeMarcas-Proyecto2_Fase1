@@ -46,14 +46,14 @@ El css es el lenguaje que controla el estilo y diseño visual del HTML, que defi
   
 - Responsive Desing: Usamos media queries para adaprtarlo a otras plataforma con doferentes tamaño de pantalla.
 bash
-´´´
+'''
 
    @media (max-width: 768px) {
     .nav__list {
         flex-direction: column;
     }
 }
-´´´
+'''
 
   - Variable Css: Usamos variables para mas consistencia.
 
