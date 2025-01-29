@@ -299,7 +299,7 @@ footer {
 }
 
 .contact__button {
-    padding: 0.625rem;
+    padding: 0.625rem; /* Ajuste razonable */
     background-color: var(--secondary-color); /* color del botón */
     color: var(--text-color); /* color del texto */
     font-size: 1rem;
@@ -357,7 +357,7 @@ iframe {
 
 .hours__list {
     list-style: none; /* Quitar viñetas */
-    padding: 0;
+    padding: 0; /* Quitar relleno */
     text-align: center; /* Alineación del texto */
 }
 
