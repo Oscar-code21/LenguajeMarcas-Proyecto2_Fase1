@@ -495,7 +495,7 @@ iframe {
 
 /* Css para la pagina adicional*/
 
-/* Hero Section */
+/* first Section */
 .first {
     text-align: center; /* Alineación del texto */
     background-color: var(--primary-color); /* Color de fondo */
@@ -555,7 +555,7 @@ iframe {
 
 .gallery__caption {
     background-color: var(--primary-color); /* Color de fondo */
-    color: var(--text-color-light); /* Color del texto */
+    color: rgb(250, 233, 233); /* Color del texto */
     text-align: center; /* Alineación del texto */
     padding: 0.5rem;
     font-size: 1rem; /* Tamaño del texto */
