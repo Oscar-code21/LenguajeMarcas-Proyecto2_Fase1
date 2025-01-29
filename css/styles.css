@@ -224,7 +224,7 @@ main {
     padding: 1.5rem; /*espacio interno*/
     border: 1px var(--background-color); /*borde*/
     border-radius: 8px; /*borde redondeado*/
-    box-shadow: 0 1px 3px var(--dark-background); /*sombra*/
+    box-shadow: 0 0.063rem 0.188rem var(--dark-background); /*sombra*/
 } 
 
 .message__review {
@@ -255,7 +255,7 @@ footer {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
     .header__nav .nav__list {
         flex-direction: column; /*columnas*/
         gap: 0.625rem; /*espacio entre elementos*/
