@@ -82,7 +82,7 @@ body.dark-mode {
 .search-bar__input {
     padding: 0.313rem;
     font-size: 1rem; /*tamaño de la fuente*/
-    border: 0.063rem solid #ccc; /*borde del input*/
+    border: 0.063rem var(--dark-text); /*borde del input*/
     border-radius: 0.25rem; /*borde redondeado*/
 }
 
@@ -147,7 +147,7 @@ main {
 /* apartado de introducción */
 .Introduction {
     padding: 1.25rem;
-    background-color: #fff; /*color de fondo de la introduccion*/
+    background-color: var(--background-color); /*color de fondo de la introduccion*/
     border-radius: 0.5rem;
     margin-bottom: 1.25rem; /*espacio entre elementos*/
 }
@@ -179,10 +179,10 @@ main {
 }
 
 .highlights__item {
-    background-color: #fff;
+    background-color:var(--background-color);
     padding: 1.25rem;
     border-radius: 0.5rem;
-    box-shadow: 0 0.125rem 0.313rem rgba(0, 0, 0, 0.1); /*sombra*/
+    box-shadow: 0 0.125rem 0.313rem var(--dark-background); /*sombra*/
     text-align: center;
     transition: transform 0.3s; /*efecto al pasar el mouse*/
     list-style: none; /*quitar viñetas*/
@@ -220,9 +220,9 @@ main {
 }
 
 .message__item {
-    background-color: #ffffff; /*color de fondo*/
+    background-color: var(--background-color); /*color de fondo*/
     padding: 1.5rem; /*espacio interno*/
-    border: 1px solid #ddd; /*borde*/
+    border: 1px var(--background-color); /*borde*/
     border-radius: 8px; /*borde redondeado*/
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /*sombra*/
 } 
@@ -237,7 +237,7 @@ main {
     display: block; /*bloque*/
     text-align: right; /*alineacion del texto*/
     font-weight: bold; /*negrita*/
-    color: #333; /*color del texto*/
+    color: var(--dark-background); /*color del texto*/
 }
 
 
@@ -268,9 +268,10 @@ footer {
 /* Css para la pagina de contacto */
 .contact {
     display: grid; 
-    grid-template-columns: 1fr 1fr; /* 2 columnas */
+    grid-template-columns: 1fr 1fr ; /* 2 columnas */
     gap: 2.5rem; /* Espacio entre columnas */
     margin-top: 1.25rem; /* Espacio entre elementos */
+    
 }
 
 .contact__form {
@@ -288,7 +289,7 @@ footer {
 .contact__textarea {
     padding: 0.625rem; /* Ajuste razonable */
     font-size: 1rem; /* Ajuste razonable */
-    border: 0.063rem solid #ccc; /* Borde del input */
+    border: 0.063rem var(--background-color); /* Borde del input */
     border-radius: 0.25rem; /* Bordes redondeados */
     width: 100%; /* Ancho completo */
 }
@@ -311,7 +312,7 @@ footer {
 }
 
 .contact__button:hover {
-    background-color: #c0392b; /* color al pasar el mouse */
+    background-color: var(--dark-background); /* color al pasar el mouse */
 }
 
 .contact__info {
@@ -387,7 +388,7 @@ iframe {
 
 .products__title {
     font-size: 2.5rem; /* Tamaño del título */
-    color: #333;
+    color: var(--primary-color); /* Color del texto */
     text-align: center;
     margin-bottom: 2rem;
     animation: fadeIn 1s ease-out; /* Animación */
@@ -401,7 +402,7 @@ iframe {
 
 .products__section-title {
     font-size: 2rem;
-    color: #333;
+    color: var(--primary-color);/* Color del texto */
     text-align: center;
     margin-bottom: 1rem;
     animation: fadeIn 1s ease-out; /* Animación */
@@ -409,7 +410,7 @@ iframe {
 
 .products__section-description {
     font-size: 1.1rem;
-    color: #555;
+    color: var(--primary-color); /* Color del texto */
     text-align: center;
     margin-bottom: 1.5rem;
     animation: fadeIn 1.2s ease-out; /* Animación */
@@ -425,17 +426,17 @@ iframe {
 }
 
 .product {
-    background-color: #fff; /* Color de fondo */
+    background-color: var(--background-color); /* Color de fondo */
     padding: 1.25rem;
     border-radius: 0.5rem; /* Bordes redondeados */
-    box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1); /* Sombra */
+    box-shadow: 0 0.25rem 0.375rem var(--dark-background); /* Sombra */
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto al pasar el mouse */
 }
 
 .product:hover {
     transform: scale(1.05);
-    box-shadow: 0 0.25rem 0.938rem rgba(0, 0, 0, 0.2); /* Sombra */
+    box-shadow: 0 0.25rem 0.938rem var(--primary-color); /* Sombra */
 }
 
 .product__image {
@@ -448,19 +449,19 @@ iframe {
 
 .product__name {
     font-size: 1.25rem; /* Tamaño del nombre */
-    color: #333;
+    color: var(--primary-color); /* Color del texto */
     margin-bottom: 0.5rem; /* Espacio entre elementos */
 }
 
 .product__price {
     font-size: 1.125rem; /* Tamaño del precio */
-    color: #e74c3c;
+    color: var(--secondary-color); /* Color del texto */
     margin-bottom: 1rem; /* Espacio entre elementos */
 }
 
 .product__button {
     padding: 0.5rem 1rem;
-    background-color: #e74c3c;  /* Color del botón */
+    background-color: var(--secondary-color);  /* Color del botón */
     color: #fff; /* Color del texto */
     border: none;
     border-radius: 0.313rem;
@@ -469,7 +470,7 @@ iframe {
 }
 
 .product__button:hover {
-    background-color: #c0392b; /* Color al pasar el mouse */
+    background-color: var(--dark-background); /* Color al pasar el mouse */
     transform: translateY(-0.125rem); /* Efecto al pasar el mouse */
 }
 
@@ -499,10 +500,10 @@ iframe {
 .first {
     text-align: center; /* Alineación del texto */
     background-color: var(--primary-color); /* Color de fondo */
-    color: #e0e0e0;
+    color: var(--text-color); /* Color del texto */
     padding: 3rem 1rem;
     border-radius: 0.625rem; /* Bordes redondeados */
-    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2); /* Sombra */
+    box-shadow: 0 0.25rem 0.5rem var(--dark-background); /* Sombra */
     
 }
 
@@ -539,7 +540,7 @@ iframe {
 .gallery__item {
     border-radius: 0.625rem; /* Bordes redondeados */
     overflow: hidden;
-    box-shadow: 0 0.25rem 0.375rem  rgba(0, 0, 0, 0.1); /* Sombra */
+    box-shadow: 0 0.25rem 0.375rem  var(--dark-background); /* Sombra */
     transition: transform 0.3s ease; /* Efecto al pasar el mouse */
 }
 
@@ -566,7 +567,7 @@ iframe {
     background-color: #f9f9f9; /* Color de fondo */
     padding: 2rem 1.5rem;
     border-radius: 0.625rem; /* Bordes redondeados */
-    box-shadow: 0 25rem 375rem rgba(0, 0, 0, 0.1); /* Sombra */
+    box-shadow: 0 25rem 375rem var(--dark-background); /* Sombra */
    
 }
 
@@ -592,7 +593,7 @@ iframe {
     color: #e0e0e0;
     padding: 2rem 1.5rem; /* Espacio interno */
     border-radius: 0.625rem;
-    box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1); /* Sombra */
+    box-shadow: 0 0.25rem 0.375rem var(--dark-background); /* Sombra */
     
 }
 
@@ -611,7 +612,7 @@ iframe {
 .events__item {
     margin-bottom: 1.5rem; /* Espacio entre elementos */
     padding: 1rem; /* Espacio interno */
-    border-bottom: 0.063rem solid rgba(255, 255, 255, 0.5); /* Borde inferior */
+    border-bottom: 0.063rem solid var(--secondary-color); /* Borde inferior */
 }
 
 .events__name {
