@@ -486,7 +486,7 @@ iframe {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
     .products__grid { /* Ajuste de la rejilla */
         grid-template-columns: 1fr; /* 1 columna */
     }
@@ -530,7 +530,7 @@ iframe {
 
 .gallery__list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajuste automático de columnas */
+    grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr)); /* Ajuste automático de columnas */
     gap: 2rem;
     padding: 0; /* Quitar relleno */
     list-style: none; /* Quitar viñetas */
@@ -633,7 +633,7 @@ iframe {
     }
 
     .gallery__list {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* 1 columna */
     }
 
     .tips__item {
